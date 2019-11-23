@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        AlertHandler().showAlert(self, title: "Hello Alert", message: "This is a custom alert") { (buttonTapped) in
+            print("The ok button was tapped")
+        }
     }
 
 
