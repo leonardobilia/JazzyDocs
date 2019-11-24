@@ -8,18 +8,18 @@
 
 import UIKit
 
-/// This is a class created for handling Alerts in Project
+/// This is a class created for handling Alerts
 class AlertHandler: NSObject {
 
     /**
      Call this function for showing alert with a single OK button in your View Controller.
      - Parameters:
         - viewController : View Controller over which the function is called. You can use self, or provide view controller name.
-        - title: Pass your alert title in String.
-        - message: Pass your alert message in String.
+        - title: This will display a title String.
+        - message: This will display a message String.
         - actionHandler: This will give you call back inside block when OK button is tapped
      
-     ### Usage Example: ###
+     Usage:
      ````
      AlertClass().showAlert(self, title: "Hello Alert", message: "This is custom alert") { (buttonTapped) in
      }

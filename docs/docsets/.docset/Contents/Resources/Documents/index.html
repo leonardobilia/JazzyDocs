@@ -13,7 +13,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (12% documented)</p>
+        <p><a href="index.html"> Docs</a> (46% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -27,6 +27,14 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
+            <a href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="readme.html">README</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -36,10 +44,13 @@
                 <a href="Classes/AppDelegate.html">AppDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/SceneDelegate.html">SceneDelegate</a>
+                <a href="Classes/DocsViewController.html">DocsViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/ViewController.html">ViewController</a>
+                <a href="Classes/HomeViewController.html">HomeViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SceneDelegate.html">SceneDelegate</a>
               </li>
             </ul>
           </li>
@@ -49,12 +60,134 @@
         <section>
           <section class="section">
             
-            <h3 id='authors' class='heading'>Authors</h3>
+            <h1 id='documentation-for-swift-and-objective-c-project-using-jezzy' class='heading'>Documentation for Swift and Objective-c project using Jezzy</h1>
+
+<p>How amazing it would be if we could simply focus on writing code and at the same time have all our projects documentations beautifully created automatically. Even better if it could have the same feeling and style of Apple&rsquo;s official documentation.</p>
+
+<p>That&rsquo;s completely possible using <a href="https://github.com/realm/jazzy">Jezzy</a>!</p>
+<h2 id='overview' class='heading'>Overview</h2>
+
+<p>In this project, you can find a few technics to write native documentation while coding and have it converted to a great website that can be hosted using Github Pages.</p>
+
+<p>Jazzy generates all the <strong>HTML</strong>, <strong>CSS</strong> and <strong>JS</strong> files for us. So, we don&rsquo;t need to worry about that.
+There can be a description of classes, enums, protocols, extensions, functions, properties, and a lot more.</p>
+<h2 id='how-to-get-started-with-jazzy' class='heading'>How to get started with Jazzy?</h2>
+
+<p>Simply hold <code>Command</code> + <code>Space</code>, type <strong>Terminal</strong> in the Spotlight Search and hit <code>return</code>.</p>
+
+<p>Now, type the following command:</p>
+<pre class="highlight plaintext"><code>sudo gem install jazzy
+</code></pre>
+
+<p>Enter your system password and wait until the process is completed.</p>
+<h2 id='now-it-39-s-time-to-add-some-native-documentation-to-our-xcode-project' class='heading'>Now it&rsquo;s time to add some native documentation to our Xcode project.</h2>
+
+<p>It&rsquo;s important to understand a little bit about Markdown, once that&rsquo;s the way we need to comment our code to be used by Jazzy to generate the documentation for us.</p>
+
+<p>Here you can read the <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Guide</a> to give you some great inspiration.</p>
+
+<p>Take a look at this screenshot to have a glance at how I have commented on the class and how the native documentation looks like on the quick help inspector on the right side.</p>
+
+<p><img src="/ReadMeAssets/native_documentation.png" alt="Native Documentation"></p>
+<h2 id='are-you-ready-for-the-magic' class='heading'>Are you ready for the magic?</h2>
+
+<p>Back to <strong>Terminal</strong> and navigate to project root folder using the following command:</p>
+<pre class="highlight plaintext"><code>cd YOUR-PROJECT-ROOT-FOLDER-PATH
+</code></pre>
+
+<p>Ah, I was almost forgetting! 
+If you need any extra help, you can use:</p>
+<pre class="highlight plaintext"><code>jazzy --help
+</code></pre>
+
+<p>Now for creating the magical document, just use:</p>
+<pre class="highlight plaintext"><code>jazzy --min-acl internal
+</code></pre>
+
+<p>And that&rsquo;s it!</p>
+
+<p>Go to your Xcode project folder and you will see a folder <strong>‘docs’</strong>. 
+Open the <strong>index.html</strong> and you will get your shine Apple&rsquo;s style documentation that will look like this:</p>
+
+<p><img src="/ReadMeAssets/docs_example.png" alt="Docs Example"></p>
+<h2 id='but-wait-is-there-a-way-to-make-it-even-better' class='heading'>But wait! Is there a way to make it even better?</h2>
+
+<p>Of course, there is!
+Instead of typing a weird code every time you want to re-generate your docs. Such as:</p>
+<pre class="highlight plaintext"><code>jazzy --min-acl internal
+</code></pre>
+
+<p>Why not making it sound more natural by&hellip;</p>
+<h2 id='creating-a-makefile' class='heading'>Creating a Makefile</h2>
+
+<p>We can encapsulate the Jazzy commands and settings inside of a <strong>Makefile</strong>.</p>
+
+<p>documentation:</p>
+<pre class="highlight plaintext"><code>@jazzy \
+    --min-acl internal \
+    --no-hide-documentation-coverage \
+    --theme apple \
+    --output ./docs \
+    --documentation=./*.md
+@rm -rf ./build
+</code></pre>
+
+<p>Just open your favorite text editor and create a new Makefile with the code above and save it on the root folder of your Xcode project.</p>
+
+<p>From now on we can simply run the code below on the Terminal to generate the documentation.</p>
+<pre class="highlight plaintext"><code>make documentation
+</code></pre>
+<h3 id='some-explanations' class='heading'>Some explanations:</h3>
+
+<p><strong>min-acl internal</strong>
+To document all public functions and variables, we set it to <code>internal</code>. But, if you would like also to document and expose <code>private</code> and <code>fileprivate</code> functions, the min-acl will need to be set to private.</p>
+
+<p><strong>no-hide-documentation-coverage</strong>
+Enables the project documentation percentage in the docs.</p>
+
+<p><strong>theme apple</strong>
+Pick the best theme for your project. Check the examples below:</p>
+
+<ul>
+<li><a href="https://realm.io/docs/swift/latest/api/">apple</a></li>
+<li><a href="https://reduxkit.github.io/ReduxKit/">fullwidth</a></li>
+<li><a href="https://harshilshah.github.io/IGListKit/">jony</a></li>
+</ul>
+
+<p><strong>output ./docs</strong>
+That is the output path of the generated documentation.</p>
+
+<p><strong>documentation = ./</strong> * <strong>md</strong>
+Last but not least, we can add a section in the generated docs with a link to the ReadMe. So, we can use that as a home page for the docs.</p>
+<h2 id='hosting-brand-new-docs-on-github-pages' class='heading'>Hosting brand new docs on GitHub Pages</h2>
+
+<p>Of course, you can host your docs on any website hosting you might own. Here I&rsquo;m showing you how to use <a href="https://pages.github.com/">GitHub Pages</a>. If, and only if you meet one of the following criteria.</p>
+
+<ol>
+<li>Your project must be set to public on Github.</li>
+<li>You have a Github Pro account</li>
+</ol>
+
+<p>First of all, commit and push your project to Github and then:</p>
+
+<ul>
+<li>Go to your Github Settings</li>
+<li>Scroll to the bottom of the page until you find the section for the Github Pages</li>
+<li>Open the source dropdown menu and select the docs folder</li>
+</ul>
+
+<p><img src="/ReadMeAssets/github_pages.png" alt="Github Pages"></p>
+
+<p>That&rsquo;s it. You will get a custom URL that you can use to link the ReadMe page to your brand new documentation.
+So, go ahead and check the one I have generated for this project.</p>
+<h2 id='documentation' class='heading'>Documentation</h2>
+
+<p>Documentation examples for this project can be found <a href="https://leonardobilia.github.io/JazzyDocs/">here</a>.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-11-23)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-11-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

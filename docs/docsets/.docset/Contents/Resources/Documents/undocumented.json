@@ -9,23 +9,114 @@
     },
     {
       "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/AppDelegate.swift",
-      "line": 16,
+      "line": 14,
       "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/AppDelegate.swift",
-      "line": 23,
+      "line": 21,
       "symbol": "AppDelegate.application(_:configurationForConnecting:options:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/AppDelegate.swift",
-      "line": 29,
+      "line": 27,
       "symbol": "AppDelegate.application(_:didDiscardSceneSessions:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/DocsViewController.swift",
+      "line": 11,
+      "symbol": "DocsViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/DocsViewController.swift",
+      "line": 13,
+      "symbol": "DocsViewController.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/DocsViewController.swift",
+      "line": 14,
+      "symbol": "DocsViewController.subtitleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/DocsViewController.swift",
+      "line": 15,
+      "symbol": "DocsViewController.closeButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/DocsViewController.swift",
+      "line": 16,
+      "symbol": "DocsViewController.alertButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/DocsViewController.swift",
+      "line": 18,
+      "symbol": "DocsViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/DocsViewController.swift",
+      "line": 117,
+      "symbol": "DocsViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/HomeViewController.swift",
+      "line": 11,
+      "symbol": "HomeViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/HomeViewController.swift",
+      "line": 13,
+      "symbol": "HomeViewController.backgroundImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/HomeViewController.swift",
+      "line": 14,
+      "symbol": "HomeViewController.logoImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/HomeViewController.swift",
+      "line": 15,
+      "symbol": "HomeViewController.getStartedButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/HomeViewController.swift",
+      "line": 17,
+      "symbol": "HomeViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/HomeViewController.swift",
+      "line": 83,
+      "symbol": "HomeViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -44,57 +135,43 @@
     },
     {
       "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/SceneDelegate.swift",
-      "line": 16,
+      "line": 15,
       "symbol": "SceneDelegate.scene(_:willConnectTo:options:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/SceneDelegate.swift",
-      "line": 23,
+      "line": 22,
       "symbol": "SceneDelegate.sceneDidDisconnect(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/SceneDelegate.swift",
-      "line": 30,
+      "line": 29,
       "symbol": "SceneDelegate.sceneDidBecomeActive(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/SceneDelegate.swift",
-      "line": 35,
+      "line": 34,
       "symbol": "SceneDelegate.sceneWillResignActive(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/SceneDelegate.swift",
-      "line": 40,
+      "line": 39,
       "symbol": "SceneDelegate.sceneWillEnterForeground(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/SceneDelegate.swift",
-      "line": 45,
+      "line": 44,
       "symbol": "SceneDelegate.sceneDidEnterBackground(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/ViewController.swift",
-      "line": 11,
-      "symbol": "ViewController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/leonardo/GFG Group/Resources/POCs/JazzyDocs/JazzyDocs/ViewController.swift",
-      "line": 13,
-      "symbol": "ViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
