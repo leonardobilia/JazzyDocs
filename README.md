@@ -124,3 +124,7 @@ So, go ahead and check the one I have generated for this project.
 ## Documentation
 
 Documentation examples for this project can be found [here](https://leonardobilia.github.io/JazzyDocs/).
+
+## License
+
+This project is released under the  [MIT license](https://github.com/leonardobilia/JazzyDocs/blob/master/LICENSE).
