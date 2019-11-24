@@ -29,7 +29,7 @@ Here you can read the [Markdown Guide](https://github.com/adam-p/markdown-here/w
 
 Take a look at this screenshot to have a glance at how I have commented on the class and how the native documentation looks like on the quick help inspector on the right side.
 
-![Native Documentation](https://github.com/leonardobilia/JazzyDocs/blob/master/ReadMeAssets/native_documentation.png)
+![Native Documentation](https://raw.githubusercontent.com/leonardobilia/JazzyDocs/master/ReadMeAssets/native_documentation.png)
 
 ## Are you ready for the magic?
 
@@ -51,7 +51,7 @@ And that's it!
 Go to your Xcode project folder and you will see a folder **‘docs’**. 
 Open the **index.html** and you will get your shine Apple's style documentation that will look like this:
 
-![Docs Example](https://github.com/leonardobilia/JazzyDocs/blob/master/ReadMeAssets/docs_example.png)
+![Docs Example](https://raw.githubusercontent.com/leonardobilia/JazzyDocs/master/ReadMeAssets/docs_example.png)
 
 
 ## But wait! Is there a way to make it even better?
@@ -116,7 +116,7 @@ First of all, commit and push your project to Github and then:
 -   Scroll to the bottom of the page until you find the section for the Github Pages
 -   Open the source dropdown menu and select the docs folder
 
-![Github Pages](https://github.com/leonardobilia/JazzyDocs/blob/master/ReadMeAssets/github_pages.png)
+![Github Pages](https://raw.githubusercontent.com/leonardobilia/JazzyDocs/master/ReadMeAssets/github_pages.png)
 
 That's it. You will get a custom URL that you can use to link the ReadMe page to your brand new documentation.
 So, go ahead and check the one I have generated for this project.
