@@ -121,9 +121,8 @@ Instead of typing a weird code every time you want to re-generate your docs. Suc
 <h2 id='creating-a-makefile' class='heading'>Creating a Makefile</h2>
 
 <p>We can encapsulate the Jazzy commands and settings inside of a <strong>Makefile</strong>.</p>
-
-<p>documentation:</p>
-<pre class="highlight plaintext"><code>@jazzy \
+<pre class="highlight plaintext"><code>documentation:    
+@jazzy \
     --min-acl internal \
     --no-hide-documentation-coverage \
     --theme apple \

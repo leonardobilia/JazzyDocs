@@ -67,8 +67,7 @@ Why not making it sound more natural by...
 
 We can encapsulate the Jazzy commands and settings inside of a **Makefile**.
 
-documentation:
-
+    documentation:    
     @jazzy \
         --min-acl internal \
         --no-hide-documentation-coverage \
