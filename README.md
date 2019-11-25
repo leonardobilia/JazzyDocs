@@ -1,8 +1,8 @@
 # Documentation for Swift and Objective-c project using Jezzy
 
-How amazing it would be if we could simply focus on writing code and at the same time have all our projects documentations beautifully created automatically. Even better if it could have the same feeling and style of Apple's official documentation.
+How amazing it would be if we could just focus on code writing and at the same time have all the documentation of our projects created automatically. Even better if it could have the same feeling and style of Apple’s official documentation, right?
 
-That's completely possible using [Jezzy](https://github.com/realm/jazzy)!
+This is completely possible using [Jezzy](https://github.com/realm/jazzy)!
 
 ## Overview
 
@@ -61,11 +61,9 @@ Instead of typing a weird code every time you want to re-generate your docs. Suc
 
     jazzy --min-acl internal
 
-Why not making it sound more natural by...
+Why not making it sound more natural by encapsulating the Jazz commands and settings inside of a Makefile?
 
 ## Creating a Makefile
-
-We can encapsulate the Jazzy commands and settings inside of a **Makefile**.
 
     documentation:    
     @jazzy \

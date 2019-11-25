@@ -62,9 +62,9 @@
             
             <h1 id='documentation-for-swift-and-objective-c-project-using-jezzy' class='heading'>Documentation for Swift and Objective-c project using Jezzy</h1>
 
-<p>How amazing it would be if we could simply focus on writing code and at the same time have all our projects documentations beautifully created automatically. Even better if it could have the same feeling and style of Apple&rsquo;s official documentation.</p>
+<p>How amazing it would be if we could just focus on code writing and at the same time have all the documentation of our projects created automatically. Even better if it could have the same feeling and style of Apple’s official documentation, right?</p>
 
-<p>That&rsquo;s completely possible using <a href="https://github.com/realm/jazzy">Jezzy</a>!</p>
+<p>This is completely possible using <a href="https://github.com/realm/jazzy">Jezzy</a>!</p>
 <h2 id='overview' class='heading'>Overview</h2>
 
 <p>In this project, you can find a few technics to write native documentation while coding and have it converted to a great website that can be hosted using Github Pages.</p>
@@ -117,10 +117,8 @@ Instead of typing a weird code every time you want to re-generate your docs. Suc
 <pre class="highlight plaintext"><code>jazzy --min-acl internal
 </code></pre>
 
-<p>Why not making it sound more natural by&hellip;</p>
+<p>Why not making it sound more natural by encapsulating the Jazz commands and settings inside of a Makefile?</p>
 <h2 id='creating-a-makefile' class='heading'>Creating a Makefile</h2>
-
-<p>We can encapsulate the Jazzy commands and settings inside of a <strong>Makefile</strong>.</p>
 <pre class="highlight plaintext"><code>documentation:    
 @jazzy \
     --min-acl internal \
