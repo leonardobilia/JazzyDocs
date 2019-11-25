@@ -107,7 +107,7 @@ class DocsViewController: UIViewController {
     
     /// Present simple alert
     @objc func alertButtonAction() {
-        AlertHandler().showAlert(self, title: "Hello Jazzy", message: "This is just a custom alert to tell you how much Jazzy makes our lives easier") { (buttonTapped) in
+        AlertHandler.present(self, title: "Hello Jazzy", message: "This is just a custom alert to tell you how much Jazzy makes our lives easier") { (buttonTapped) in
             print("The ok button was tapped")
         }
     }

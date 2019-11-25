@@ -21,12 +21,13 @@ class AlertHandler: NSObject {
      
      Usage:
      ````
-     AlertClass().showAlert(self, title: "Hello Alert", message: "This is custom alert") { (buttonTapped) in
+     AlertHandler.present(self, title: "Hello Jazzy", message: "This is just a custom alert to tell you how much Jazzy makes our lives easier") { (buttonTapped) in
+         print("The ok button was tapped")
      }
      ````
      */
     
-    func showAlert(_ viewController: UIViewController, title: String, message: String , actionHandler :@escaping(UIAlertAction) -> Void){
+    static func present(_ viewController: UIViewController, title: String, message: String , actionHandler :@escaping(UIAlertAction) -> Void){
         DispatchQueue.main.async {
             let alert = UIAlertController(title: title, message: message , preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: actionHandler))
