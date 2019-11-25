@@ -1,4 +1,4 @@
-# Documentation for Swift and Objective-c project using Jazzy
+# Documentation for Swift and Objective-C project using Jazzy
 
 How amazing it would be if we could just focus on code writing and at the same time have all the documentation of our projects created automatically. Even better if it could have the same feeling and style of Apple’s official documentation, right?
 
