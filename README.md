@@ -1,8 +1,8 @@
-# Documentation for Swift and Objective-c project using Jezzy
+# Documentation for Swift and Objective-c project using Jazzy
 
 How amazing it would be if we could just focus on code writing and at the same time have all the documentation of our projects created automatically. Even better if it could have the same feeling and style of Apple’s official documentation, right?
 
-This is completely possible using [Jezzy](https://github.com/realm/jazzy)!
+This is completely possible using [Jazzy](https://github.com/realm/jazzy)!
 
 ## Overview
 
