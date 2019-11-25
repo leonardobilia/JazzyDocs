@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// This is a home for the application
+/// This is a home controller for the application
 class HomeViewController: UIViewController {
 
     var backgroundImageView = UIImageView()

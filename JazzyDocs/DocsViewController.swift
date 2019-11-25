@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// This is a class created for presenting the benefits for using Jazzy
+/// This is a class created for presenting all the benefits for using Jazzy
 class DocsViewController: UIViewController {
 
     var titleLabel = UILabel()

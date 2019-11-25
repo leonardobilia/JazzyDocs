@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// This is a class created for handling Alerts
+/// This is a class for handling Alerts
 class AlertHandler: NSObject {
 
     /**

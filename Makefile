@@ -1,7 +1,7 @@
 
 documentation:
 	@jazzy \
-		--min-acl internal \
+		--min-acl private \
 		--no-hide-documentation-coverage \
 		--theme apple \
 		--output ./docs \
