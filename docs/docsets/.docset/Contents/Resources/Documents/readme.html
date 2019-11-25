@@ -13,7 +13,7 @@
     <a title="README  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (46% documented)</p>
+        <p><a href="index.html"> Docs</a> (0% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -34,26 +34,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="Classes.html">Classes</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Classes/AlertHandler.html">AlertHandler</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/AppDelegate.html">AppDelegate</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/DocsViewController.html">DocsViewController</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/HomeViewController.html">HomeViewController</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/SceneDelegate.html">SceneDelegate</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -64,7 +44,7 @@
 
 <p>How amazing it would be if we could just focus on code writing and at the same time have all the documentation of our projects created automatically. Even better if it could have the same feeling and style of Apple’s official documentation, right?</p>
 
-<p>This is completely possible using <a href="https://github.com/realm/jazzy">Jazzy</a>!</p>
+<p>It is completely possible using <a href="https://github.com/realm/jazzy">Jazzy</a>!</p>
 <h2 id='overview' class='heading'>Overview</h2>
 
 <p>In this project, you can find a few technics to write native documentation while coding and have it converted to a great website that can be hosted using Github Pages.</p>
@@ -117,7 +97,7 @@ Instead of typing a weird code every time you want to re-generate your docs. Suc
 <pre class="highlight plaintext"><code>jazzy --min-acl internal
 </code></pre>
 
-<p>Why not making it sound more natural by encapsulating the Jazz commands and settings inside of a Makefile?</p>
+<p>Why not making it sound more natural by encapsulating the Jazzy commands and settings inside of a Makefile?</p>
 <h2 id='creating-a-makefile' class='heading'>Creating a Makefile</h2>
 <pre class="highlight plaintext"><code>documentation:    
 @jazzy \
